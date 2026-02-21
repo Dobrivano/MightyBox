@@ -1,0 +1,88 @@
+/* 1. Глобални настройки за плавност */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden; /* Предотвратява хоризонтален скрол при анимации */
+}
+
+/* 2. Анимация на Кошницата (Drawer) */
+#cart-drawer {
+    /* Използваме cubic-bezier за "премиум" усещане при отваряне */
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow: -10px 0 30px rgba(11, 34, 25, 0.1);
+}
+
+/* Класът, който JS ще добавя за отваряне */
+#cart-drawer.open {
+    transform: translateX(0);
+}
+
+/* 3. Ефект "Velvet Rope" за бутоните (Pulse Action) */
+.bg-action {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.bg-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(45, 204, 112, 0.3);
+    filter: brightness(1.1);
+}
+
+.bg-action:active {
+    transform: translateY(1px);
+}
+
+/* 4. Дизайн на Проектната Галерия */
+.project-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #fff;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card img {
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.08);
+}
+
+/* 5. Детайли за Формата и Полетата */
+input, textarea {
+    transition: all 0.2s ease;
+    border: 2px solid transparent !important;
+}
+
+input:focus, textarea:focus {
+    border-color: #2DCC70 !important;
+    background-color: #fff !important;
+    box-shadow: 0 0 0 4px rgba(45, 204, 112, 0.1);
+}
+
+/* 6. Потребителски Скролбар (Luxury Style) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F4F1EA;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0B2219;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2DCC70;
+}
+
+/* 7. Анимация за елементите в кошницата */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }

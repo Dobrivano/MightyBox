@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="bg" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Mighty Boxes | Луксозни Модулни Контейнери | Проектиране и Доставка</title>
+    <meta name="description" content="Изградете своя мечтан дом или индустриален комплекс с Mighty Boxes. Модулни решения от 20кв.м. до бази за 100 души. Бърза доставка и премиум качество.">
+    <meta name="keywords" content="модулни къщи, контейнери за живеене, сглобяеми къщи, индустриални контейнери, фургони, луксозни контейнери">
+    <meta name="author" content="GG Solutions - Ginko Grudev">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="google-site-verification" content="ВАШИЯТ_КОД_ТУК" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mighty Boxes | Не просто контейнер. Архитектурно бижу.">
+    <meta property="og:description" content="От малки студиа до мащабни индустриални бази. Разгледайте нашите проекти.">
+    <meta property="og:image" content="img/fasada-1">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐷</text></svg>" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: '#0B2219', 
+              action: '#2DCC70',
+              sand: '#F4F1EA',
+              gold: '#C5A059'
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    </head>
+
+<body class="bg-sand text-forest font-sans antialiased selection:bg-action selection:text-white">
+
+    <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-forest/5 px-6 py-4 flex justify-between items-center">
+        <div class="font-black text-2xl tracking-tighter uppercase italic">MIGHTY<span class="text-action">BOXES</span></div>
+        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+            <a href="#projects" class="hover:text-action transition">Проекти</a>
+            <a href="#reviews" class="hover:text-action transition">Отзиви</a>
+            <a href="#contact" class="hover:text-action transition">Контакт</a>
+        </div>
+        <button onclick="toggleCart()" class="bg-forest text-white px-5 py-2 rounded-full flex items-center gap-3 hover:bg-black transition">
+            <span class="text-xs font-bold uppercase">Вашият проект</span>
+            <span class="cart-count bg-action text-white text-[10px] rounded-full h-5 w-5 flex items-center justify-center">0</span>
+        </button>
+    </nav>
+
+    <section class="relative h-[95vh] flex items-center justify-center overflow-hidden bg-forest">
+        <div class="absolute inset-0 opacity-50">
+            <img src="img/skelet-1.jpg" alt="Модулен дом" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <span class="text-action font-bold uppercase tracking-[0.3em] text-sm mb-4 block">Бъдещето на архитектурата</span>
+            <h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-6 italic">Изгради своя свят.<br>Модул по модул.</h1>
+            <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">Индустриална стомана срещу скандинавски лукс. Готови за живеене до 30 дни.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button onclick="CartSystem.addItem('solo-1', 'Студио 20кв.м.', 45000)" class="bg-action text-white px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition shadow-xl shadow-action/20">Добави Студио</button>
+                <a href="#contact" class="bg-white text-forest px-10 py-5 rounded-xl font-bold text-lg hover:bg-gray-100 transition">Запитване за мащабен проект</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-5xl md:text-7xl font-black text-forest italic">Mighty мащаби.</h2>
+                <p class="text-xl text-gray-500 mt-4">От 20кв.м. убежища до индустриални комплекси за 100+ души.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card group cursor-pointer lg:col-span-2 overflow-hidden rounded-[2.5rem] relative h-[500px]">
+                    <img src="img/mnogo-konteineri.jpg">
+                    <div class="absolute inset-0 bg-gradient-to-t from-forest/90 p-10 flex flex-col justify-end">
+                        <span class="text-action font-bold text-xs uppercase mb-2">Резиденция | 20кв.м.</span>
+                        <h3 class="text-white text-4xl font-black italic">The Solo Sanctuary</h3>
+                    </div>
+                </div>
+                <div class="project-card group cursor-pointer overflow-hidden rounded-[2.5rem] relative h-[500px]">
+                    <img src="img/porch-1.jpg">
+                    <div class="absolute inset-0 bg-gradient-to-t from-forest/90 p-8 flex flex-col justify-end">
+                        <span class="text-gold font-bold text-xs uppercase mb-2">Индустриална база | 100 души</span>
+                        <h3 class="text-white text-2xl font-black italic">The Worker Hive</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-forest text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-action font-bold uppercase tracking-widest text-sm">Доверие от цял свят</span>
+            <h2 class="text-4xl md:text-6xl font-black mt-2 italic">Какво казват нашите резиденти</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Доставката беше невероятно бърза. От празен парцел до напълно обзаведен 3-стаен дом за точно 22 дни. Феноменално!"</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Маркус Т. (Тексас)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Живяла съм в луксозни мезонети, но акустиката тук е на друго ниво. Пълна тишина, дори при силен вятър и дъжд."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Елена Р. (Аризона)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Използвахме системата за нашата минна база. Настанихме 120 души за под месец. Логистиката им е безупречна."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Даниел К. (Канада)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Екологично и красиво. Не прилича на контейнер, а на модерно архитектурно бижу. Най-добрата инвестиция в имот."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Сара Л. (Калифорния)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Вертикалното подреждане промени всичко за нашия планински терен. Спестихме десетки хиляди от основи."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Юлиан В. (Швейцария)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Превърнахме 2 модула в технологично студио. Клиентите ни остават без думи, когато влязат вътре."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Виктор Г. (София)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Mighty Boxes издържаха на буря от първа категория без нито една пукнатина. Стоманата е индустриален клас."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Раян М. (Флорида)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Живея напълно автономно в Родопите. Соларната интеграция на Mighty е перфектно оптимизирана."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Иван П. (България)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Процесът по проектиране беше като избор на лимузина. Получих персонален архитект, който се погрижи за всичко."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— Клер Д. (Франция)</strong>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                <p class="italic text-sm leading-relaxed">"Отдавам модула си в Airbnb. Запълнен е на 95% през цялата година. Дизайнът продава сам."</p>
+                <div class="mt-6">
+                    <div class="text-action text-xs mb-1">★★★★★</div>
+                    <strong class="text-xs uppercase tracking-tighter">— София Х. (Норвегия)</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="bg-white p-12 rounded-[3rem] shadow-2xl text-center">
+            <h2 class="text-4xl font-black mb-4">Готови ли сте за Вашия Mighty Box?</h2>
+            <form class="grid gap-4 mt-8">
+                <input type="text" placeholder="Име и Фамилия" class="p-4 rounded-xl bg-sand border-none focus:ring-2 focus:ring-action transition outline-none">
+                <input type="email" placeholder="Имейл" class="p-4 rounded-xl bg-sand border-none focus:ring-2 focus:ring-action transition outline-none">
+                <textarea placeholder="Разкажете ни за Вашия проект..." class="p-4 rounded-xl bg-sand border-none focus:ring-2 focus:ring-action transition outline-none h-32"></textarea>
+                <button type="submit" class="bg-forest text-white py-5 rounded-xl font-bold text-xl uppercase tracking-widest hover:bg-action transition">Изпрати запитване</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="cart-drawer" class="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-[200] transform translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="p-8 h-full flex flex-col">
+            <div class="flex justify-between items-center mb-10">
+                <h2 class="text-3xl font-black uppercase italic">Вашата конфигурация</h2>
+                <button onclick="toggleCart()" class="text-4xl">&times;</button>
+            </div>
+            <div id="cart-items-list" class="flex-grow space-y-6 overflow-y-auto"></div>
+            <div class="border-t pt-8">
+                <div class="flex justify-between text-2xl font-black mb-8">
+                    <span>Общо (Прогноза)</span>
+                    <span class="cart-total text-action">0 лв.</span>
+                </div>
+                <button class="w-full bg-forest text-white py-6 rounded-2xl font-bold text-lg hover:bg-action transition">Завърши поръчката</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
