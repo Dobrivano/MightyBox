@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="bg" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Реализирани проекти от Konteineri Bulgaria. От индустриални бази до премиум бунгала. Вижте как превръщаме празни парцели в машини за живеене.">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QvOX9pjk.woff2" />
+  <!-- CHANGE TITLE + DESCRIPTION PER PAGE -->
+  <title>Konteineri Bulgaria</title>
+  <meta name="description" content="Контейнери България – луксозни модулни контейнерни домове и офиси." />
 
-    <style>
-        /* Вграждаме същия оптимизиран CSS блок */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        @font-face {
-            font-family: 'Montserrat'; font-style: normal; font-weight: 900; font-display: swap;
-            src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QvOX9pjk.woff2) format('woff2');
-            unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-        }
-        body { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; background-color: #F4F1EA; color: #0B2219; }
-        
-        /* Слагаме всички твои utility класове от index.html тук */
-        /* ... (копирай целия <style> блок) ... */
+  <!-- Faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .project-card { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); background: #fff; border: 1px solid #F4F1EA; }
-        .project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(11,34,25,0.08); }
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" media="print" onload="this.media='all'" />
+  <!-- Tailwind (KEEP but optimized) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" />
-    </noscript>
+  <!-- Your Tailwind config -->
+  <script src="tailwind-config.js"></script>
 
-    <title>Проекти | Konteineri Bulgaria</title>
+  <!-- Font Awesome (non-blocking) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        media="print"
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </noscript>
+
+  <!-- Small performance boost -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #F4F1EA;
+      color: #0B2219;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body class="bg-white text-forest font-sans antialiased selection:bg-action selection:text-white">
@@ -56,7 +61,7 @@
 
   <section class="relative min-h-[80vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-forest">
         <div class="absolute inset-0 z-0">
-            <img src="img/skelet-1.webp" alt="Реална стомана" class="w-full h-full object-cover grayscale">
+            <img src="img/skelet-1.webp" loading="lazy" alt="Реална стомана" class="w-full h-full object-cover grayscale">
         </div>
         <div class="absolute inset-0 bg-forest/80 z-0"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-forest via-transparent to-forest z-0"></div>
@@ -75,7 +80,7 @@
     <section class="py-24 bg-white border-b border-forest/5">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative order-2 lg:order-1">
-                <img src="img/mnogo-konteineri.webp" alt="Индустриален лагер" class="rounded-[2.5rem] shadow-2xl shadow-forest/10 w-full h-[500px] object-cover">
+                <img src="img/mnogo-konteineri.webp" loading="lazy" alt="Индустриален лагер" class="rounded-[2.5rem] shadow-2xl shadow-forest/10 w-full h-[500px] object-cover">
                 <div class="absolute top-6 left-6 bg-forest text-white px-4 py-2 rounded-lg text-xs font-black uppercase tracking-widest shadow-lg">
                     Мащаб: Индустриален
                 </div>
@@ -136,7 +141,7 @@
                 </div>
             </div>
             <div class="relative">
-                <img src="img/fasada-1.webp" alt="The Premium Box" class="rounded-[2.5rem] shadow-2xl shadow-forest/10 w-full h-[500px] object-cover border-8 border-white">
+                <img src="img/fasada-1.webp" loading="lazy" alt="The Premium Box" class="rounded-[2.5rem] shadow-2xl shadow-forest/10 w-full h-[500px] object-cover border-8 border-white">
                 <div class="absolute top-6 right-6 bg-forest text-white px-4 py-2 rounded-lg text-xs font-black uppercase tracking-widest shadow-lg">
                     Мащаб: Premium Модул
                 </div>
@@ -147,7 +152,7 @@
     <section class="py-24 bg-white border-b border-forest/5">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative order-2 lg:order-1">
-                <img src="img/porch-1.webp" alt="The Oasis Box" class="rounded-[2.5rem] shadow-2xl shadow-forest/10 w-full h-[500px] object-cover">
+                <img src="img/porch-1.webp" loading="lazy" alt="The Oasis Box" class="rounded-[2.5rem] shadow-2xl shadow-forest/10 w-full h-[500px] object-cover">
                 <div class="absolute top-6 left-6 bg-forest text-white px-4 py-2 rounded-lg text-xs font-black uppercase tracking-widest shadow-lg">
                     Мащаб: Бунгало с Дек
                 </div>
@@ -190,7 +195,7 @@
         <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
             
             <div class="break-inside-avoid overflow-hidden rounded-3xl group relative shadow-lg">
-                <img src="img/mnogo-konteineri.webp" 
+                <img src="img/mnogo-konteineri.webp" loading="lazy"
                      alt="Контейнер Сливен" 
                      class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -199,7 +204,7 @@
             </div>
 
             <div class="break-inside-avoid overflow-hidden rounded-3xl group relative shadow-lg">
-                <img src="img/fasada-1.webp" 
+                <img src="img/fasada-1.webp" loading="lazy"
                      alt="Сайдинг Стара Загора" 
                      class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -208,7 +213,7 @@
             </div>
 
             <div class="break-inside-avoid overflow-hidden rounded-3xl group relative shadow-lg">
-                <img src="img/porch-1.webp" 
+                <img src="img/porch-1.webp" loading="lazy"
                      alt="Митков Мост" 
                      class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -217,7 +222,7 @@
             </div>
 
             <div class="break-inside-avoid overflow-hidden rounded-3xl group relative shadow-lg">
-                <img src="img/skelet-1.webp" 
+                <img src="img/skelet-1.webp" loading="lazy"
                      alt="Индустриален дизайн" 
                      class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -226,7 +231,7 @@
             </div>
 
             <div class="break-inside-avoid overflow-hidden rounded-3xl group relative shadow-lg">
-                <img src="img/exterior-2.webp" 
+                <img src="img/exterior-2.webp" loading="lazy"
                      alt="Модулен офис" 
                      class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -235,7 +240,7 @@
             </div>
 
             <div class="break-inside-avoid overflow-hidden rounded-3xl group relative shadow-lg">
-                <img src="img/exterior-6.webp" 
+                <img src="img/exterior-6.webp" loading="lazy"
                      alt="Еко бунгало" 
                      class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -248,7 +253,7 @@
 
     <section id="contact" class="relative py-32 px-6 flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="img/truck-1.webp" alt="Доставка с камион" class="w-full h-full object-cover object-center grayscale">
+            <img src="img/truck-1.webp" loading="lazy" alt="Доставка с камион" class="w-full h-full object-cover object-center grayscale">
         </div>
         <div class="absolute inset-0 bg-forest/90 z-0"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-forest via-transparent to-forest z-0"></div>
