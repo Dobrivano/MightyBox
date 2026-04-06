@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Научете повече за екипа на Контейнери България. Нашата мисия е да създаваме качествени и достъпни модулни домове." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QvOX9pjk.woff2" />
+
+    <style>
+        /* Вграждаме същия оптимизиран CSS код от index.html тук */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        @font-face {
+            font-family: 'Montserrat'; font-style: normal; font-weight: 900; font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QvOX9pjk.woff2) format('woff2');
+            unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        body { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; background-color: #F4F1EA; color: #0B2219; overflow-x: hidden; }
+        :root { --forest: #0B2219; --action: #2DCC70; --sand: #F4F1EA; --gold: #C5A059; }
+        
+        /* Слагаме всички твои utility класове (flex, grid, text-xs и т.н.), които AI-ът генерира за теб */
+        /* ... (копирай целия голям <style> блок от твоя index.html тук) ... */
+        
+        .bg-action { background-color: #2DCC70; color: #fff; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        .bg-action:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(45, 204, 112, 0.35); }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" media="print" onload="this.media='all'" />
+    
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" />
+    </noscript>
+
     <title>За нас | Konteineri Bulgaria</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind-config.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white font-sans antialiased">
 
