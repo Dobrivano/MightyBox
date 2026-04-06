@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Посочваме къде е картата на сайта
+Sitemap: https://yourdomain.com/sitemap.xml

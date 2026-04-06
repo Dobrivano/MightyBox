@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="bg" class="scroll-smooth">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
-<link rel="preconnect" href="https://cdn.tailwindcss.com">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
     
     <title>Konteineri Bulgaria | Луксозни Модулни Контейнери | Проектиране и Доставка</title>
     <meta name="description" content="Изградете своя мечтан дом или индустриален комплекс с Konteineri Bulgaria. Модулни решения от 20кв.м. до бази за 100 души. Бърза доставка и премиум качество.">
@@ -19,64 +20,48 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Konteineri Bulgaria | Не просто контейнер. Архитектурно бижу.">
     <meta property="og:description" content="От малки студиа до мащабни индустриални бази. Разгледайте нашите проекти.">
-    <meta property="og:image" content="img/fasada-1" >
+    <meta property="og:image" content="img/fasada-1.webp" >
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;0,900;1,900&display=swap');html{scroll-behavior:smooth}body{overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;background-color:#ffffff;color:#0B2219;font-family:'Montserrat',sans-serif}.bg-action{position:relative;transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1);background-color:#2DCC70;color:#ffffff}.bg-action:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(45,204,112,0.35);filter:brightness(1.05)}.bg-action:active{transform:translateY(1px);box-shadow:0 5px 10px rgba(45,204,112,0.2)}.project-card{transition:all 0.4s cubic-bezier(0.165,0.84,0.44,1);background:#ffffff;border:1px solid #F4F1EA}.project-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(11,34,25,0.08)}.project-card img{transition:transform 0.6s cubic-bezier(0.25,0.8,0.25,1)}.project-card:hover img{transform:scale(1.05)}input,textarea{transition:all 0.3s ease;border:2px solid transparent!important;background-color:#F4F1EA!important;color:#0B2219!important}input:focus,textarea:focus{border-color:#2DCC70!important;background-color:#ffffff!important;outline:none;box-shadow:0 0 0 4px rgba(45,204,112,0.15)}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#F4F1EA}::-webkit-scrollbar-thumb{background:#0B2219;border-radius:8px}::-webkit-scrollbar-thumb:hover{background:#2DCC70}.shadow-viber\/10{box-shadow:0 20px 25px -5px rgba(115,96,242,0.1),0 10px 10px -5px rgba(115,96,242,0.04)}</style>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              forest: '#0B2219', 
-              action: '#2DCC70',
-              sand: '#F4F1EA',
-              gold: '#C5A059'
-            },
-            fontFamily: {
-              sans: ['Montserrat', 'sans-serif'],
-            }
-          }
-        }
-      }
-    </script>
-
-    </head>
+    <script>tailwind.config={theme:{extend:{colors:{forest:'#0B2219',action:'#2DCC70',sand:'#F4F1EA',gold:'#C5A059'},fontFamily:{sans:['Montserrat','sans-serif']}}}}</script>
+</head>
 
 <body class="bg-sand text-forest font-sans antialiased selection:bg-action selection:text-white">
 
-   <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-forest/5 px-6 py-4 flex justify-between items-center">
-    <div class="font-black text-2xl tracking-tighter uppercase italic text-forest">
-        Контейнери<span class="text-action">България</span>
-    </div>
-    <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
-        <a href="index.html" class="text-action font-bold underline decoration-2 underline-offset-8">Начало</a>
-        <a href="projects.html" class="hover:text-action transition text-gray-600">Проекти</a>
-        <a href="about_us.html" class="hover:text-action transition text-gray-600">За нас</a>
-    </div>
-    <a href="#contact" class="bg-forest text-white px-6 py-2 rounded-full text-xs font-bold uppercase hover:bg-action transition shadow-lg shadow-forest/10">Контакт</a>
-</nav>
+    <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-forest/5 px-6 py-4 flex justify-between items-center">
+        <div class="font-black text-2xl tracking-tighter uppercase italic text-forest">
+            Контейнери<span class="text-action">България</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+            <a href="index.html" class="text-action font-bold underline decoration-2 underline-offset-8">Начало</a>
+            <a href="projects.html" class="hover:text-action transition text-gray-600">Проекти</a>
+            <a href="about_us.html" class="hover:text-action transition text-gray-600">За нас</a>
+        </div>
+        <a href="#contact" class="bg-forest text-white px-6 py-2 rounded-full text-xs font-bold uppercase hover:bg-action transition shadow-lg shadow-forest/10">Контакт</a>
+    </nav>
 
     <section class="relative h-[95vh] flex items-center justify-center overflow-hidden bg-forest">
         <div class="absolute inset-0 opacity-50">
-            <img src="img/skelet-1.webp" alt="Модулен дом" class="w-full h-full object-cover">
+            <img src="img/skelet-1.webp" alt="Модулен дом" class="w-full h-full object-cover" fetchpriority="high" decoding="sync">
         </div>
         <div class="relative z-10 text-center px-6 max-w-5xl">
             <span class="text-action font-bold uppercase tracking-[0.3em] text-sm mb-4 block">Бъдещето на архитектурата</span>
             <h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-6 italic">Изгради <br>своя свят.<br>Модул по модул.</h1>
             <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">Готови за живеене до 30 дни.</p>
-           <div class="flex justify-center w-full mt-10">
-    <a href="#contact" 
-       class="bg-action text-white px-12 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-lg hover:scale-105 hover:shadow-2xl hover:shadow-action/40 transition-all duration-300 shadow-xl shadow-action/20 inline-block text-center">
-        Консултирай се сега
-    </a>
-</div>
+            <div class="flex justify-center w-full mt-10">
+                <a href="#contact" class="bg-action text-white px-12 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-lg hover:scale-105 hover:shadow-2xl hover:shadow-action/40 transition-all duration-300 shadow-xl shadow-action/20 inline-block text-center">
+                    Консултирай се сега
+                </a>
+            </div>
         </div>
     </section>
 
@@ -89,16 +74,15 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="project-card group cursor-pointer lg:col-span-2 overflow-hidden rounded-[2.5rem] relative h-[500px]">
-                    <img src="img/exterior-6.webp" **loading="lazy**">
+                    <img src="img/exterior-6.webp" alt="Резиденция" loading="lazy" decoding="async" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-forest/90 p-10 flex flex-col justify-end">
                         <span class="text-action font-bold text-xs uppercase mb-2">Резиденция | 40кв.м.</span>
                         <h3 class="text-white text-4xl font-black italic">Бягство към уединено кътче</h3>
                     </div>
                 </div>
                 <div class="project-card group cursor-pointer overflow-hidden rounded-[2.5rem] relative h-[500px]">
-                    <img src="img/exterior-3.webp" **loading="lazy**">
-                    <img src="img/exterior-2.webp" **loading="lazy**">
-                    <div class="absolute inset-0 bg-gradient-to-t from-forest/90 p-8 flex flex-col justify-end">
+                    <img src="img/exterior-3.webp" alt="Индустриална база" loading="lazy" decoding="async" class="w-full h-full object-cover absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-forest/90 p-8 flex flex-col justify-end z-10">
                         <span class="text-gold font-bold text-xs uppercase mb-2">Индустриална база | 100 души</span>
                         <h3 class="text-white text-2xl font-black italic">Кошера на пчелите работнички</h3>
                     </div>
@@ -108,319 +92,320 @@
     </section>
 
     <section id="reviews" class="py-24 bg-forest text-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <span class="text-action font-bold uppercase tracking-widest text-sm">Доверие от цял свят</span>
-            <h2 class="text-4xl md:text-6xl font-black mt-2 italic">Какво казват нашите клиенти</h2>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
-                <p class="italic text-sm leading-relaxed">"Доставката беше невероятно бърза. От празен парцел до напълно обзаведен 3-стаен дом за точно 22 дни. Феноменално!"</p>
-                <div class="mt-6">
-                    <div class="text-action text-xs mb-1">★★★★★</div>
-                    <strong class="text-xs uppercase tracking-tighter">— Николаос Т. (Гърция)</strong>
-                </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-action font-bold uppercase tracking-widest text-sm">Доверие от цял свят</span>
+                <h2 class="text-4xl md:text-6xl font-black mt-2 italic">Какво казват нашите клиенти</h2>
             </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                    <p class="italic text-sm leading-relaxed">"Доставката беше невероятно бърза. От празен парцел до напълно обзаведен 3-стаен дом за точно 22 дни. Феноменално!"</p>
+                    <div class="mt-6">
+                        <div class="text-action text-xs mb-1">★★★★★</div>
+                        <strong class="text-xs uppercase tracking-tighter">— Николаос Т. (Гърция)</strong>
+                    </div>
+                </div>
 
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
-                <p class="italic text-sm leading-relaxed">"Поръчахме си за нашата база. Настанихме 120 души за под месец. Логистиката им е безупречна."</p>
-                <div class="mt-6">
-                    <div class="text-action text-xs mb-1">★★★★★</div>
-                    <strong class="text-xs uppercase tracking-tighter">— Даниел К. (България)</strong>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                    <p class="italic text-sm leading-relaxed">"Поръчахме си за нашата база. Настанихме 120 души за под месец. Логистиката им е безупречна."</p>
+                    <div class="mt-6">
+                        <div class="text-action text-xs mb-1">★★★★★</div>
+                        <strong class="text-xs uppercase tracking-tighter">— Даниел К. (България)</strong>
+                    </div>
                 </div>
-            </div>
 
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
-                <p class="italic text-sm leading-relaxed">"Превърнахме 2 модула в ново жилище. Клиентите ни остават без думи, когато влязат вътре."</p>
-                <div class="mt-6">
-                    <div class="text-action text-xs mb-1">★★★★★</div>
-                    <strong class="text-xs uppercase tracking-tighter">— Виктор Г. (България)</strong>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                    <p class="italic text-sm leading-relaxed">"Превърнахме 2 модула в ново жилище. Клиентите ни остават без думи, когато влязат вътре."</p>
+                    <div class="mt-6">
+                        <div class="text-action text-xs mb-1">★★★★★</div>
+                        <strong class="text-xs uppercase tracking-tighter">— Виктор Г. (България)</strong>
+                    </div>
                 </div>
-            </div>
 
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
-                <p class="italic text-sm leading-relaxed">"Издържат на буря и екстремен климат без да мръдне. Радвам му се вече 10 години."</p>
-                <div class="mt-6">
-                    <div class="text-action text-xs mb-1">★★★★★</div>
-                    <strong class="text-xs uppercase tracking-tighter">— Езги М. (Турция)</strong>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                    <p class="italic text-sm leading-relaxed">"Издържат на буря и екстремен климат без да мръдне. Радвам му се вече 10 години."</p>
+                    <div class="mt-6">
+                        <div class="text-action text-xs mb-1">★★★★★</div>
+                        <strong class="text-xs uppercase tracking-tighter">— Езги М. (Турция)</strong>
+                    </div>
                 </div>
-            </div>
 
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
-                <p class="italic text-sm leading-relaxed">"Живея си изцяло в Родопите. Сложих си соларни панели на покрива.<br>Топа!"</p>
-                <div class="mt-6">
-                    <div class="text-action text-xs mb-1">★★★★★</div>
-                    <strong class="text-xs uppercase tracking-tighter">— Иван П. (България)</strong>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:bg-white/10 transition">
+                    <p class="italic text-sm leading-relaxed">"Живея си изцяло в Родопите. Сложих си соларни панели на покрива.<br>Топа!"</p>
+                    <div class="mt-6">
+                        <div class="text-action text-xs mb-1">★★★★★</div>
+                        <strong class="text-xs uppercase tracking-tighter">— Иван П. (България)</strong>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-24 bg-white border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <img src="img/mnogo-konteineri.webp" alt="Сливен" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover">
-                <div class="absolute top-6 left-6 bg-action text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">📍 Сливен</div>
-            </div>
-            <div>
-                <span class="text-action font-bold uppercase tracking-widest text-sm italic">Индустриален Проект</span>
-                <h2 class="text-4xl font-black text-forest mt-4 mb-6 italic uppercase">Жилищни контейнери за служители</h2>
-                <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">🛏️ 20 контейнера</span>
-                    <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">⛨ 10 см Панели</span>
-                </div>
-                <p class="text-lg text-gray-600 mb-8 font-light italic">Изградихме напълно оборудван работнически лагер, който осигурява удобство и защита за работниците на обекта.</p>
-                
-                <ul class="space-y-6">
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Оптимална изолация:</strong> Дебелите панели гарантират комфорт при всякакви метеорологични условия.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Функционален интериор:</strong> Просторни помещения с възможност за персонализация.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Бързо изграждане:</strong> Завършен в кратки срокове без компромис с качеството.
-                        </span>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-24 bg-sand border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="order-2 lg:order-1">
-                <span class="text-action font-bold uppercase tracking-widest text-sm italic">Жилищно Строителство</span>
-                <h2 class="text-4xl font-black text-forest mt-4 mb-6 italic uppercase">Проект на контейнер със сайдинг</h2>
-                <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="bg-white px-4 py-2 rounded-lg text-xs font-bold italic">📍 Стара Загора</span>
-                    <span class="bg-white px-4 py-2 rounded-lg text-xs font-bold italic">⛨ +2 см Сайдинг</span>
+    <section class="py-24 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="img/mnogo-konteineri.webp" alt="Сливен" loading="lazy" decoding="async" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover">
+                    <div class="absolute top-6 left-6 bg-action text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">📍 Сливен</div>
                 </div>
-                <p class="text-lg text-gray-600 mb-8 font-light italic">Изградихме напълно оборудван жилищен контейнер, който осигурява уют и сигурност през цялата година.</p>
-                
-                <ul class="space-y-6">
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Оптимална изолация:</strong> Сайдингът гарантира комфорт независимо от сезона.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Модуларен интериор:</strong> Направи контейнера си свой – изграждаме това, което ти виждаш.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Лесно Поставяне:</strong> Само 3 дни за пълен монтаж на място.
-                            <div class="mt-10">
-    <a href="projects.html" class="inline-flex items-center gap-3 bg-forest text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-action transition-all duration-300 group shadow-lg shadow-forest/20">
-        Виж целия проект
-        <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-    </a>
-</div>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="relative order-1 lg:order-2">
-                <img src="img/fasada-1.webp" alt="Стара Загора" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover border-8 border-white">
+                <div>
+                    <span class="text-action font-bold uppercase tracking-widest text-sm italic">Индустриален Проект</span>
+                    <h2 class="text-4xl font-black text-forest mt-4 mb-6 italic uppercase">Жилищни контейнери за служители</h2>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">🛏️ 20 контейнера</span>
+                        <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">⛨ 10 см Панели</span>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-8 font-light italic">Изградихме напълно оборудван работнически лагер, който осигурява удобство и защита за работниците на обекта.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Оптимална изолация:</strong> Дебелите панели гарантират комфорт при всякакви метеорологични условия.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Функционален интериор:</strong> Просторни помещения с възможност за персонализация.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Бързо изграждане:</strong> Завършен в кратки срокове без компромис с качеството.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <img src="img/porch-1.webp" alt="Митков Мост" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover">
-                <div class="absolute -bottom-6 -right-6 bg-gold text-white p-6 rounded-2xl shadow-xl italic font-bold">
-                    "Завършен за броени дни"
+    <section class="py-24 bg-sand border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-action font-bold uppercase tracking-widest text-sm italic">Жилищно Строителство</span>
+                    <h2 class="text-4xl font-black text-forest mt-4 mb-6 italic uppercase">Проект на контейнер със сайдинг</h2>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <span class="bg-white px-4 py-2 rounded-lg text-xs font-bold italic">📍 Стара Загора</span>
+                        <span class="bg-white px-4 py-2 rounded-lg text-xs font-bold italic">⛨ +2 см Сайдинг</span>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-8 font-light italic">Изградихме напълно оборудван жилищен контейнер, който осигурява уют и сигурност през цялата година.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Оптимална изолация:</strong> Сайдингът гарантира комфорт независимо от сезона.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Модуларен интериор:</strong> Направи контейнера си свой – изграждаме това, което ти виждаш.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Лесно Поставяне:</strong> Само 3 дни за пълен монтаж на място.
+                                <div class="mt-10">
+                                    <a href="projects.html" class="inline-flex items-center gap-3 bg-forest text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-action transition-all duration-300 group shadow-lg shadow-forest/20">
+                                        Виж целия проект
+                                        <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                                    </a>
+                                </div>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <span class="text-action font-bold uppercase tracking-widest text-sm italic">Бунгало & Отдих</span>
-                <h2 class="text-4xl font-black text-forest mt-4 mb-6 italic uppercase">Контейнерите са практичният избор</h2>
-                <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">📍 Митков Мост</span>
-                    <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">⛨ 5см Полиуретан</span>
+                <div class="relative order-1 lg:order-2">
+                    <img src="img/fasada-1.webp" alt="Стара Загора" loading="lazy" decoding="async" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover border-8 border-white">
                 </div>
-                <p class="text-lg text-gray-600 mb-8 font-light italic">Изцяло оборудван жилищен контейнер във вид на бунгало, доставящо спокойствие и уют.</p>
-                
-                <ul class="space-y-6">
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Добавена веранда:</strong> Да си навън, без да напускаш дома си.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Персонализиран екстериор:</strong> Цветни панели според твоите виждания.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-4">
-                        <span class="text-action font-bold w-5 shrink-0">✓</span> 
-                        <span class="text-gray-600 leading-relaxed">
-                            <strong class="text-forest">Пълна защита:</strong> Полиуретановият панел предлага шумо и топло изолация.
-                        </span>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="img/porch-1.webp" alt="Митков Мост" loading="lazy" decoding="async" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-gold text-white p-6 rounded-2xl shadow-xl italic font-bold">
+                        "Завършен за броени дни"
+                    </div>
+                </div>
+                <div>
+                    <span class="text-action font-bold uppercase tracking-widest text-sm italic">Бунгало & Отдих</span>
+                    <h2 class="text-4xl font-black text-forest mt-4 mb-6 italic uppercase">Контейнерите са практичният избор</h2>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">📍 Митков Мост</span>
+                        <span class="bg-sand px-4 py-2 rounded-lg text-xs font-bold italic">⛨ 5см Полиуретан</span>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-8 font-light italic">Изцяло оборудван жилищен контейнер във вид на бунгало, доставящо спокойствие и уют.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Добавена веранда:</strong> Да си навън, без да напускаш дома си.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Персонализиран екстериор:</strong> Цветни панели според твоите виждания.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-action font-bold w-5 shrink-0">✓</span> 
+                            <span class="text-gray-600 leading-relaxed">
+                                <strong class="text-forest">Пълна защита:</strong> Полиуретановият панел предлага шумо и топло изолация.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="bg-forest py-32 flex items-center justify-center text-center">
-    <div class="max-w-4xl mx-auto px-6">
-        <span class="bg-action/20 text-action px-6 py-2 rounded-full text-sm font-bold uppercase tracking-[0.3em] mb-10 inline-block">
-            НЕОГРАНИЧЕНО КАЧЕСТВО, ОГРАНИЧЕНИ БРОЙКИ
-        </span>
-
-        <h2 class="text-5xl md:text-7xl font-black text-white mb-8 italic uppercase leading-tight">
-            Безплатна консултация <br> 
-            <span class="text-action">Без ангажимент.</span>
-        </h2>
-
-        <p class="text-xl md:text-2xl text-gray-300 mb-12 font-light italic leading-relaxed">
-            Нашите експерти ще превърнат визията ви в технически план.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
-            <a href="tel:+359899151727" class="bg-action text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-lg hover:scale-105 transition-all shadow-2xl shadow-action/30">
-                Обади се сега
-            </a>
-            
-            <span class="text-gray-400 font-bold uppercase tracking-widest text-sm">
-                ИЛИ НИ ПОТЪРСЕТЕ ВЪВ 
-                <a href="viber://chat?number=%2B359899151727" class="text-white hover:text-action transition-colors border-b border-white/20 ml-1">VIBER</a>
+        <div class="max-w-4xl mx-auto px-6">
+            <span class="bg-action/20 text-action px-6 py-2 rounded-full text-sm font-bold uppercase tracking-[0.3em] mb-10 inline-block">
+                НЕОГРАНИЧЕНО КАЧЕСТВО, ОГРАНИЧЕНИ БРОЙКИ
             </span>
-        </div>
-    </div>
-</section>
 
-   <footer class="bg-sand border-t border-forest/10 pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            
-            <div class="space-y-6">
-                <div class="font-black text-2xl tracking-tighter uppercase italic text-forest">
-                    Контейнери<span class="text-action">България</span>
-                </div>
-                
-                <p class="text-forest/70 text-sm leading-relaxed italic font-medium">
-                    Ние превръщаме стандартните контейнери в премиум модулни домове. Иновативно строителство в България.
-                </p>
-            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white mb-8 italic uppercase leading-tight">
+                Безплатна консултация <br> 
+                <span class="text-action">Без ангажимент.</span>
+            </h2>
 
-            <div class="space-y-6">
-                <h4 class="font-black uppercase tracking-widest text-sm text-forest italic underline decoration-action decoration-2 underline-offset-8">Меню</h4>
-                <ul class="space-y-3 font-bold">
-                    <li>
-                        <a href="index.html" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
-                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
-                            Начало
-                        </a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
-                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
-                            Проекти
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about_us.html" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
-                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
-                            За нас
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
-                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
-                            Контакти
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="space-y-6">
-                <h4 class="font-black uppercase tracking-widest text-sm text-forest italic">Контакти</h4>
-                <ul class="space-y-4 font-bold">
-                    <li>
-                        <a href="tel:+359899151727" class="flex items-center gap-3 text-forest/80 hover:text-action transition cursor-pointer">
-                            <i class="fas fa-phone-alt text-action w-4 text-center"></i>
-                            <span class="text-sm">+359 899 151 727</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.alo.bg/users/acs_di" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-forest/80 hover:text-action transition cursor-pointer">
-                            <i class="fas fa-store text-action w-4 text-center"></i>
-                            <span class="text-sm">Официален профил в alo.bg</span>
-                        </a>
-                    </li>
-                    <li class="flex items-start gap-3 text-forest/80">
-                        <i class="fas fa-map-marker-alt text-action mt-1 w-4 text-center"></i>
-                        <span class="text-sm leading-relaxed italic text-xs">
-                            гр. Свиленград, България
-                        </span>
-                    </li>
-                </ul>
-
-                <div class="flex space-x-3 pt-2">
-                    <a href="https://www.facebook.com/mightyboxesbg/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white border border-forest/10 shadow-md flex items-center justify-center text-forest hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition text-lg">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="viber://chat?number=%2B359899151727" aria-label="Viber" class="w-10 h-10 rounded-full bg-white border border-forest/10 shadow-md flex items-center justify-center text-forest hover:bg-[#7360f2] hover:text-white hover:border-[#7360f2] transition text-lg">
-                        <i class="fab fa-viber"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="space-y-6 flex flex-col">
-                <h4 class="font-black uppercase tracking-widest text-sm text-forest italic">Локация</h4>
-                <div class="rounded-2xl overflow-hidden h-64 lg:h-72 shadow-xl border-2 border-forest/10 hover:border-action transition-colors duration-300">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2098.7540079535697!2d26.159315522287983!3d41.77193734805619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbg!4v1773227641231!5m2!1sen!2sbg" 
-                        class="w-full h-full border-0" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="pt-8 border-t border-forest/10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-forest/50 text-[10px] uppercase tracking-widest font-bold">
-                © 2026 Контейнери България. All Rights Reserved.
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 font-light italic leading-relaxed">
+                Нашите експерти ще превърнат визията ви в технически план.
             </p>
-            <div class="text-forest/50 text-[10px] uppercase tracking-widest font-bold italic">
-                Built by 
-                <a href="https://ginkogrudev.com" target="_blank" rel="noopener noreferrer" class="text-action font-black hover:underline transition-colors duration-300">
-                    GG Solutions
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+                <a href="tel:+359899151727" class="bg-action text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-lg hover:scale-105 transition-all shadow-2xl shadow-action/30">
+                    Обади се сега
                 </a>
+                
+                <span class="text-gray-400 font-bold uppercase tracking-widest text-sm">
+                    ИЛИ НИ ПОТЪРСЕТЕ ВЪВ 
+                    <a href="viber://chat?number=%2B359899151727" class="text-white hover:text-action transition-colors border-b border-white/20 ml-1">VIBER</a>
+                </span>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-    <script src="script.js"></script>
+    <footer class="bg-sand border-t border-forest/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <div class="space-y-6">
+                    <div class="font-black text-2xl tracking-tighter uppercase italic text-forest">
+                        Контейнери<span class="text-action">България</span>
+                    </div>
+                    
+                    <p class="text-forest/70 text-sm leading-relaxed italic font-medium">
+                        Ние превръщаме стандартните контейнери в премиум модулни домове. Иновативно строителство в България.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="font-black uppercase tracking-widest text-sm text-forest italic underline decoration-action decoration-2 underline-offset-8">Меню</h4>
+                    <ul class="space-y-3 font-bold">
+                        <li>
+                            <a href="index.html" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                                <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                                Начало
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                                <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                                Проекти
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about_us.html" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                                <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                                За нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact" class="text-forest/80 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                                <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="font-black uppercase tracking-widest text-sm text-forest italic">Контакти</h4>
+                    <ul class="space-y-4 font-bold">
+                        <li>
+                            <a href="tel:+359899151727" class="flex items-center gap-3 text-forest/80 hover:text-action transition cursor-pointer">
+                                <i class="fas fa-phone-alt text-action w-4 text-center"></i>
+                                <span class="text-sm">+359 899 151 727</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.alo.bg/users/acs_di" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-forest/80 hover:text-action transition cursor-pointer">
+                                <i class="fas fa-store text-action w-4 text-center"></i>
+                                <span class="text-sm">Официален профил в alo.bg</span>
+                            </a>
+                        </li>
+                        <li class="flex items-start gap-3 text-forest/80">
+                            <i class="fas fa-map-marker-alt text-action mt-1 w-4 text-center"></i>
+                            <span class="text-sm leading-relaxed italic text-xs">
+                                гр. Свиленград, България
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://www.facebook.com/mightyboxesbg/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white border border-forest/10 shadow-md flex items-center justify-center text-forest hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition text-lg">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="viber://chat?number=%2B359899151727" aria-label="Viber" class="w-10 h-10 rounded-full bg-white border border-forest/10 shadow-md flex items-center justify-center text-forest hover:bg-[#7360f2] hover:text-white hover:border-[#7360f2] transition text-lg">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="space-y-6 flex flex-col">
+                    <h4 class="font-black uppercase tracking-widest text-sm text-forest italic">Локация</h4>
+                    <div class="rounded-2xl overflow-hidden h-64 lg:h-72 shadow-xl border-2 border-forest/10 hover:border-action transition-colors duration-300">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2098.7540079535697!2d26.159315522287983!3d41.77193734805619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbg!4v1773227641231!5m2!1sen!2sbg" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Google Maps Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-forest/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-forest/50 text-[10px] uppercase tracking-widest font-bold">
+                    © 2026 Контейнери България. All Rights Reserved.
+                </p>
+                <div class="text-forest/50 text-[10px] uppercase tracking-widest font-bold italic">
+                    Built by 
+                    <a href="https://ginkogrudev.com" target="_blank" rel="noopener noreferrer" class="text-action font-black hover:underline transition-colors duration-300">
+                        GG Solutions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
